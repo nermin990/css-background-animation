@@ -4,32 +4,133 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
     <title>Animated background</title>
 </head>
 <body>
-    <div class="welcome">
-        <h1>
-            CSS Animation 2
-        </h1>
+
+<div class="background">
+    <div class="container">
+        <div class="row">
+            <div class="welcome">
+                <h1>
+                    My name is Nermin, and this repository features a collection of innovative CSS animations.
+                </h1>
+            </div>
+            <div class="squere">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="circle">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="squere">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
+
+</div>
+
+
+<section class="tabs-holder">
+    <div class="container">
+        <div class="row">
+            <div class="tabs">
+                <ul class="tab-titles">
+                    <li class="tab-title active" data-tab="tab1" data-tab-short="Anim 1"><h4>Animation 1</h4></li>
+                    <li class="tab-title" data-tab="tab2" data-tab-short="Anim 2"><h4>Animation 2</h4></li>
+                    <li class="tab-title" data-tab="tab3" data-tab-short="Anim 3"><h4>Animation 3</h4></li>
+                    <li class="tab-title" data-tab="tab4" data-tab-short="Anim 4"><h4>Animation 4</h4></li>
+                </ul>
+
+                <div class="tab-content">
+                    <div id="tab1" class="tab-pane active">
+                        <h2>Automatic Text Typing</h2>
+                        <pre><code id="codeBlock"><div class="lineOfCode"><em>Welcome</em> to</div><div
+                                class="lineOfCode"><strong>Nermin's </strong><b>CSS animations</b></div><div
+                                class="lineOfCode"><s>// Thank you!</s></div></code></pre>
+                        <div class="describe">
+                            <p>In this animation, I used various HTML tags to style and create a typing effect animation
+                                with CSS.</p>
+                            <p>This effect can be used to achieve an automatic typing animation.</p>
+                        </div>
+                    </div>
+                    <div id="tab2" class="tab-pane">
+                        <h2>Loading Animation</h2>
+                        <div class="loading-container">
+                            <div class="spinner">
+
+                            </div>
+                            <div class="loading-text">
+                                <span>L</span>
+                                <span>o</span>
+                                <span>a</span>
+                                <span>d</span>
+                                <span>i</span>
+                                <span>n</span>
+                                <span>g</span>
+                                <div class="dots">
+                                    <span>.</span>
+                                    <span>.</span>
+                                    <span>.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="describe">
+                            <p>This animation is created using multiple separate HTML tags to achieve a text appearance effect and a spinning spinner.</p>
+                            <p>It can be used for loading a page or section..</p>
+                        </div>
+                    </div>
+                    <div id="tab3" class="tab-pane">
+                        <h2>Neon Sign</h2>
+                        <div class="neon-sign">OPEN</div>
+                        <div class="describe">
+                            <p>In this animation, I used the text "OPEN," which I styled with CSS to resemble an old,
+                                flickering neon sign. </p>
+                            <p>This effect can be used to highlight a specific section of a website that we want to
+                                stand out.</p>
+                        </div>
+
+                    </div>
+                    <div id="tab4" class="tab-pane">
+                        <h2>Expending Squares Animation</h2>
+                        <div class="square-container">
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <div class="square"></div>
+                            <a href="#!" onclick="alert('Hello!')">Click here</a>
+                        </div>
+                        <div class="describe">
+                            <p>In this animation, I used four div elements, which I styled and animated using CSS. I
+                                added delays and different colors to achieve the desired effect.</p>
+                            <p>This can be used to highlight specific sections of a website that we want to stand
+                                out.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="circle">
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+</section>
+
+<script src="main.js"></script>
+
 </body>
 </html>
